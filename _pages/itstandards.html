@@ -1,0 +1,99 @@
+---
+layout: base
+title: Software Requests
+permalink: /itstandards/
+---
+
+
+
+      <div class="usa-grid">
+      {% for form in site.itstandards %}
+        {% if form.type == 'itstandards' %}
+          {% assign f = form %}
+        {% endif %}
+      {% endfor %}
+      <h1>New Software Request Form</h1>
+      <h2>A Service of the CTO's Office</h2>
+      <div class="usa-width-two-thirds">
+      <p>
+          To request review and approval for new software at GSA, please provide the following information:
+      </p>
+      <form id="contact" action="{{ ### }}" method="POST">
+        <fieldset>
+            {% for field in f.fields %}
+              {% unless field.type == 'hidden' %}<label for="contact-{{ field.name }}">{{ field.label }}</label>{% endunless %}
+              <input id="contact-{{ field.name }}"
+                name="{{ field.name }}" type="{{ field.type }}"
+                {% if field.value %} value="{{ field.value }}" {% endif %}>
+            {% endfor %}
+            <div class="usa-input-buttons-inline">
+              <input type="submit" value="{{ f.button }}">
+            </div>
+          </div>
+          <div class="usa-width-one-third" style="margin-top: 3rem;">
+            <aside>
+              <h3>Here are a few links that may be helpful:</h3>
+            <ul>
+              <li><a href="#">Useful link</a></li>
+              <li><a href="#">Useful link</a></li>
+              <li><a href="#">Useful link</a></li>
+              <li><a href="#">Useful link</a></li>
+              <li><a href="#">Useful link</a></li>
+            <ul>
+              </aside>
+          </div>
+        </fieldset>
+      </form>
+      </div>
+     
+
+      <div class="usa-grid">
+        <br>
+        <h2>FAQ's</h2>
+  <ul class="usa-accordion">
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true" aria-controls="Question-1">
+      This is an FAQ.
+    </button>
+    <div id="Question-1" class="usa-accordion-content">
+      <p>
+      Nullam at pellentesque sapien. Quisque ultrices sapien eget justo dignissim, eget viverra risus cursus. In pretium laoreet malesuada. Vivamus vel turpis fermentum, euismod nunc ut, convallis ex. Curabitur vulputate velit enim, ut viverra quam imperdiet sed. Maecenas sed eleifend sapien, eget venenatis sem. Ut elementum sem nec ipsum faucibus fringilla.
+      </p>
+    </div>
+  </li>
+    <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true" aria-controls="Question-2">
+      This is an FAQ.
+    </button>
+    <div id="Question-2" class="usa-accordion-content">
+      <p>
+      Nullam at pellentesque sapien. Quisque ultrices sapien eget justo dignissim, eget viverra risus cursus. In pretium laoreet malesuada. Vivamus vel turpis fermentum, euismod nunc ut, convallis ex. Curabitur vulputate velit enim, ut viverra quam imperdiet sed. Maecenas sed eleifend sapien, eget venenatis sem. Ut elementum sem nec ipsum faucibus fringilla.
+      </p>
+    </div>
+  </li>
+    <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true" aria-controls="Question-3">
+      This is an FAQ.
+    </button>
+    <div id="Question-3" class="usa-accordion-content">
+      <p>
+      Nullam at pellentesque sapien. Quisque ultrices sapien eget justo dignissim, eget viverra risus cursus. In pretium laoreet malesuada. Vivamus vel turpis fermentum, euismod nunc ut, convallis ex. Curabitur vulputate velit enim, ut viverra quam imperdiet sed. Maecenas sed eleifend sapien, eget venenatis sem. Ut elementum sem nec ipsum faucibus fringilla.
+      </p>
+    </div>
+  </li>
+    <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true" aria-controls="Question-4">
+      This is an FAQ.
+    </button>
+    <div id="Question-4" class="usa-accordion-content">
+      <p>
+      Nullam at pellentesque sapien. Quisque ultrices sapien eget justo dignissim, eget viverra risus cursus. In pretium laoreet malesuada. Vivamus vel turpis fermentum, euismod nunc ut, convallis ex. Curabitur vulputate velit enim, ut viverra quam imperdiet sed. Maecenas sed eleifend sapien, eget venenatis sem. Ut elementum sem nec ipsum faucibus fringilla.
+      </p>
+    </div>
+  </li>
+  </ul>
+      </div>

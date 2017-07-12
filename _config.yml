@@ -57,6 +57,53 @@ forms:
         name: entry.211727308
         label: Your email address
 
+itstandards:
+    - type: itstandards
+      heading: Ask a question
+      url: 
+      button: Submit
+      privacypolicy: Your privacy and security are important to us, we'll only share your information as described in the <a href="http://www.gsa.gov/portal/content/116609">GSA Privacy and Security Notice.</a>
+      fields:
+        - type: Name
+          name: 
+          label: Requestor Name
+        - type: email
+          name: 
+          label: Requestor Email Adress
+        - type: capability
+          name: 
+          label: What capability, function, or task do you need to perform?
+        - type: gear
+          name: 
+          label: Please confirm that you have reviewed GEAR and there are no suitable options for your business needs.
+        - type: software
+          name: 
+          label: What is the name of the software you want approved? Include vendor and version number, if known.
+        - type: type
+          name: 
+          label: What type of software is this?
+        - type: justification
+          name: 
+          label: Please provide a business justification for this request (including information on any alternatives that were explored.)
+        - type: reviewed
+          name: 
+          label: Did you speak with anyone within the GSA IT organization prior to submitting the request?
+        - type: reviewed-office
+          name: 
+          label: If yes, which office did you speak with?
+        - type: users
+          name: 
+          label: How many people do you anticipate having the same need?
+        - type: data
+          name: 
+          label: Will you be storing any sensitive data within this tool?
+        - type: management
+          name: 
+          label: Does your management support this request?
+        - type: costs
+          name: 
+          label: Please provide estimated costs, if available.
+
 intake:
   - type: intake
     heading:
